@@ -3,6 +3,8 @@
 - Atomic bools and Mutex were used to ensure synchronization.
 - There is currently no feature other than joining the game. Extremely pure.
 - I also fixed the timeout issue that occurs in the majority of the proxies and is a pain in the rear.
+- Build the Proxy with Release x86.
+- OPENSSL is required for web server.
 
 # Contact Me From the Discord Server:
 - https://www.itami.pro/
