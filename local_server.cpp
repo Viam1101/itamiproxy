@@ -78,6 +78,7 @@ void local_server::tick()
                     else var.set("mac", mac);
                     var.set("country", "tr");
                     var.set("wk", wk);
+		    var.set("meta", Global::meta);
                     //var.set("rid", rid);
                     //var.set("game_version", "4.19");
                     txt = var.serialize();
