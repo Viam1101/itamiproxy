@@ -7,7 +7,7 @@
 - OPENSSL is required for web server.
 
 # Contact Me From the Discord Server:
-- https://itami.pro/
+- https://itami.pro/discord
 
 # TODO:
 - Elaborating Packet Modify things like player structures and commands.
