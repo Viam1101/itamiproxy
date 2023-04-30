@@ -66,20 +66,20 @@ void local_server::tick()
 
                     auto mac = Global::generate_mac("00");
                     auto wk = Global::generate_rid();
-                    auto rid = Global::generate_rid();
-                    std::string fz = std::to_string(16197536 - Global::random(1, 100));
-                    std::string zf = std::to_string(4184327 - Global::random(1, 100));
+                    //auto rid = Global::generate_rid();
+                    //std::string fz = std::to_string(16197536 - Global::random(1, 100));
+                    //std::string zf = std::to_string(4184327 - Global::random(1, 100));
 
-                    std::string hash1 = std::to_string(-731287505 + Global::random(1, 100));
-                    std::string hash2 = std::to_string(-731928004 - Global::random(1, 100));
+                    //std::string hash1 = std::to_string(-731287505 + Global::random(1, 100));
+                    //std::string hash2 = std::to_string(-731928004 - Global::random(1, 100));
 
                     rtvar var = rtvar::parse(txt);
                     if (!var.find("mac")) var.append("mac|" + mac);
                     else var.set("mac", mac);
                     var.set("country", "tr");
                     var.set("wk", wk);
-                    var.set("rid", rid);
-                    var.set("game_version", "4.19");
+                    //var.set("rid", rid);
+                    //var.set("game_version", "4.19");
                     txt = var.serialize();
 
                     Global::send_text(false, txt);
